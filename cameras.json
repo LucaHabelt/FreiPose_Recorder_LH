@@ -8,11 +8,11 @@
         "context": 12848593
     },
     "40627030": {
-        "name": "top",
+        "name": "sideview",
         "context": 1024089
     },
     "40627033": {
-        "name": "pupil",
+        "name": "top",
         "context": 15870640
     },
     "40627035": {
@@ -20,7 +20,7 @@
         "context": 1843530
     },
     "40627034": {
-        "name": "cam02",
+        "name": "spoutcam",
         "context": 10160796
     }
 }
