@@ -5,15 +5,15 @@
         "flipX": false,
         "flipY": false,
         "color_mode": "Mono8",
-        "crf": 40
+        "crf": 30
     },
-    "bodycam": {
+    "pupil": {
         "gain": 37.69999955666792,
         "exp_time": 4987.0,
         "flipX": true,
         "flipY": true,
         "color_mode": "Mono8",
-        "crf": 40
+        "crf": 20
     },
     "facecam": {
         "gain": 45.01000001231034,
@@ -21,10 +21,10 @@
         "flipX": false,
         "flipY": false,
         "color_mode": "Mono8",
-        "crf": 40
+        "crf": 30
     },
-    "save_path": "C:/Users/lh1192/Documents/LocalBaslerCopiesDONOTDELETE",
+    "save_path": "C:/LocalBaslerCopiesDONOTDELETE",
     "HW_trigg": true,
     "codec": "h264_nvenc",
-    "crf": 40
+    "crf": 30
 }
