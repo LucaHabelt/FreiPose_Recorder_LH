@@ -12,7 +12,7 @@ import time
 import shutil
 
 from queue import Empty
-from threading import Event
+from threading import Event, Thread
 
 from PyQt6.QtWidgets import QApplication, QMainWindow, QFileDialog, QMessageBox
 from PyQt6.QtCore import QTimer
@@ -855,7 +855,7 @@ class BASLER_GUI(QMainWindow):
                 self.log.debug('got message to copy files')
                 self.session_path = message['session_path']
                 if self.session_path:
-                    self.copy_recorded_file()
+                    Thread(target=self.copy_recorded_file, daemon=True).start()
 
             elif message['type'] == MessageType.purge_files.value:
                 self.log.debug('got message to purge files')
