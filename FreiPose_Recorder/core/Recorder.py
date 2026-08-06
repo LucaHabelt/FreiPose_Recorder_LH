@@ -799,7 +799,7 @@ class Recorder(object):
                         img = targetImage.GetArray()
                     #img = grabResult.GetArray()
                     # context_id = self.cams_context[grabResult.GetCameraContext()]
-                    self.multi_view_queue[context_id].put_nowait(img)
+                    self.multi_view_queue[context_id].put_nowait(img[::2, ::2])
                     grabResult.Release()
                 else:
                     print("Error: ", grabResult.ErrorCode, grabResult.ErrorDescription)
@@ -909,7 +909,7 @@ class Recorder(object):
                     else:
                         self.video_writer_list[context_id].feed(img)
                     try:
-                        self.multi_view_queue[context_id].put_nowait(img)
+                        self.multi_view_queue[context_id].put_nowait(img[::2, ::2])
                     except (Full, QueueOverflow):
                         pass  # GUI preview can't keep up — drop preview frame, recording continues
                     grabResult.Release()
