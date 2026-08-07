@@ -5,15 +5,15 @@
         "flipX": false,
         "flipY": false,
         "color_mode": "Mono8",
-        "crf": 40
+        "crf": 30
     },
-    "top": {
-        "gain": 48.00000004350822,
-        "exp_time": 5000.0,
+    "pupil": {
+        "gain": 37.69999955666792,
+        "exp_time": 4987.0,
         "flipX": true,
         "flipY": true,
         "color_mode": "Mono8",
-        "crf": 40
+        "crf": 20
     },
     "spoutcam": {
         "gain": 38.34999928947086,
@@ -21,11 +21,10 @@
         "flipX": false,
         "flipY": false,
         "color_mode": "Mono8",
-        "crf": 40
+        "crf": 30
     },
-    "save_path": "C:/Users/lh1192/Documents/LocalBaslerCopiesDONOTDELETE",
-    "fps": 10,
+    "save_path": "C:/LocalBaslerCopiesDONOTDELETE",
     "HW_trigg": true,
     "codec": "h264_nvenc",
-    "crf": 40
+    "crf": 30
 }
