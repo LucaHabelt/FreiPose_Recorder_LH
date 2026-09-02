@@ -1,9 +1,15 @@
-# FreiPose_Recorder 
-Based on RecordTool by Christian https://github.com/lmb-freiburg/RecordTool
+# FreiPose_Recorder for head fixed training setups in optophysiology lab
+Adapted from FreiPose_Recorder by Artur Schneider (https://github.com/Optophys-Lab/FreiPose_Recorder) 
+based on RecordTool by Christian (https://github.com/lmb-freiburg/RecordTool)
 
 It allows to record synchronous video from a multi camera rig using Basler cameras and an Arduino or MCC-DAQ for trigger generation.
 It includes a GUI for visualization of video streams as well as changing camera settings.
 GUI can be used in remote mode and be controlled via TCP/IP.
+
+# How to use:
+- Open the GUI, enable remote mode. 
+- Load default settings, session GUI (e.g. https://github.com/LucaHabelt/ReachingTask) loads configs and settings. 
+- Arduino NANO triggers the camera frames.
 
 read the docs <https://optophys-lab.github.io/FreiPose_Recorder/>
 
